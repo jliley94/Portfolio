@@ -1,0 +1,33 @@
+// import starting from the src/ folder
+@import "variables.scss";
+
+
+// we can use the $primaryColor variable now
+h1, h2, p {
+  color: #FFF;
+  font-family: 'Dank Mono', monospace;
+}
+
+.App {
+  background: #FFF; 
+  height: 100vh;
+  text-align: center;
+
+  .pageTitle {
+    margin: 0;
+    color: $primaryColor;
+  }
+
+  .header-link {
+    display: inline; 
+    margin: 10px;
+    font-size: 25px;
+    a, a:active, a:visited {
+      color: $primaryColor;
+      &:hover {
+        color: rgb(54, 54, 54);
+      }
+    }
+    
+  }
+}
